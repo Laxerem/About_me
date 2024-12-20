@@ -1,0 +1,124 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f1919;
+    height: auto;
+    padding: 0px 10px 0px 10px;
+}
+
+.initials_container {
+    display: flex;
+    align-items: center;
+    color: white;
+    transition: 0.5s;
+    gap:20px;
+    #logo {
+        background-image: url(../images/Logo.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 120px;
+        width: 95px;
+        transition: 0.5s;
+    }
+    #logo:hover {
+        
+    }
+    h2 {
+        font-size: 30px;
+    }
+}
+
+.my_catalog {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    min-width: 500px;
+    width: 50%;
+    border-top: 2px solid white;
+    a {
+        font-family: "Montserrat", sans-serif;
+        color: white;
+        font-size: 24px;
+    }
+}
+
+main {
+    background: rgb(0,0,0);
+    background: linear-gradient(173deg, rgba(0,0,0,1) 0%, rgba(44,43,56,1) 83%);
+}
+
+.info_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+.Grigory_photo {
+    background-image: url(../images/laxerem.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 300px;
+}
+
+.about_me {
+    height: 400px;
+    min-width: 350px;
+    width: 40%;
+    font-family: "Montserrat", sans-serif;
+    background-color: #1f1919;
+    .name {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 70px;
+        font-size: 20px;
+        color: #e0e0e7;
+        background-color: #232629;
+    }
+    .about_text {
+        padding: 20px;
+        height: 290px;
+        font-family: "Montserrat", sans-serif;
+        color: white;
+        font-size: 23px;
+    }
+}
+
+@media(max-width:570px) {
+    .initials_container {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 15px;
+        gap:0px;
+        h2 {
+            width: 100%;
+            font-size: 34px;
+        }
+    }
+    .my_catalog {
+        flex-direction: column;
+        min-width: 300px;
+        width: 90%;
+        gap:20px;
+    }
+}
+
+@media(max-width: 700px) {
+    .info_container {
+        height: auto;
+        flex-direction: column;
+        .about_me {
+            width: 100%;
+        }
+    }
+}
