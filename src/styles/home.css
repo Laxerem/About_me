@@ -46,13 +46,11 @@ header {
     }
 }
 
-main {
-    background: rgb(0,0,0);
-    background: linear-gradient(173deg, rgba(0,0,0,1) 0%, rgba(44,43,56,1) 83%);
+body {
+    background-color: #0d1117;
 }
 
 .info_container {
-    padding: 20px;
     transition: 0.5s;
 }
 
@@ -60,21 +58,22 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 20px;
 }
 
 .Grigory_photo {
-    background-image: url(../images/laxerem.png);
+    background-image: url(../images/Grigory.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 400px;
-    width: 300px;
+    width: 50%;
 }
 
 .about_me {
-    height: 400px;
-    min-width: 350px;
-    width: 50%;
+    height: 100%;
+    min-width: 300px;
+    width: 45%;
     font-family: "Montserrat", sans-serif;
     background-color: #1f1919;
     .name {
@@ -101,7 +100,6 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 50px;
 }
 
 .Yougorsk_photo {
@@ -120,14 +118,77 @@ main {
     align-items: center;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
-    font-size: 40px;
+    h1 {
+        font-size: 100px;
+        transition: 0.5s;
+        background-image: linear-gradient(to right, #6200ff 0%, #f652eb 46%, #FFCC70 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
 
 .text_about_town {
+    display: flex;
+    justify-content: center;
     width: 100%;
-    height: 500px;
+    font-size: 22px;
+    div {
+        width: 90%;
+        height: 100%;
+        padding: 20px;
+        p {
+            color: #fdfdfdd8;
+            font-family: "Parkinsans", serif;
+        }
+        border-bottom: 3px solid #e0e0e7;
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #000000;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+    font-family: "JetBrains Mono", serif;
+    color: #fdfdfdd8;
+    padding: 10px;
+    height: 80px;
+    text-align: center;
+    .warning {
+        color: red;
+    }
+    .yellow {
+        color: #00ff44;
+    }
+}
+
+@media(max-width: 700px) {
+    .introduction {
+        height: auto;
+        flex-direction: column;
+        .about_me {
+            width: 100%;
+        }
+        .Grigory_photo {
+            width: 100%;
+        }
+    }
+    .Yougorsk_text {
+        h1 {
+            font-size: 70px;
+        }
+    }
 }
 
 @media(max-width:570px) {
@@ -149,12 +210,10 @@ main {
     }
 }
 
-@media(max-width: 700px) {
-    .introduction {
-        height: auto;
-        flex-direction: column;
-        .about_me {
-            width: 100%;
+@media(max-width:380px) {
+    .Yougorsk_text {
+        h1 {
+            font-size: 60px;
         }
     }
 }

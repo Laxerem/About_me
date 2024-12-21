@@ -40,8 +40,10 @@ class ElementTyping extends Typing {
             const text = text_array[i]
             if (i < text_array.length) {
                 this.element.innerHTML = ''
+                console.log("START")
                 this.typing(text)
                 .then(res => {
+                    console.log(`WAIT ${change_delay / 1000}s`)
                     setTimeout(func, change_delay)
                 })
                 i++
@@ -59,10 +61,11 @@ const text_array = [
     "A simple person who wants to be significant in the eyes of others.", 
     "Don't be afraid to make mistakes - it's much scarier when there aren't any.", 
     "I don't care about strangers. I'm not proud of it, in fact, it seems to me that we all lack a little empathy.", 
-    "I'm thinking slowly. Many people say that this has its advantages, but it's not, I'm just slow.", 
+    "I'm thinking slowly. Many people say that this has its advantages, but it's not, I'm just slow.",
+    "Yes, maybe I say this a lot, but God, I'm NOT A DESIGNER.",
     "Wow, thanks for reading this far."
 ]
 
 const element = document.querySelector(".about_description")
 const description = new ElementTyping(element, text_array)
-description.start_typing(10000)
+description.start_typing(7000)
