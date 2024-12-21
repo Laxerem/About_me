@@ -52,12 +52,14 @@ main {
 }
 
 .info_container {
+    padding: 20px;
+    transition: 0.5s;
+}
+
+.introduction {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px;
-    padding: 20px;
-    transition: 0.5s;
 }
 
 .Grigory_photo {
@@ -72,7 +74,7 @@ main {
 .about_me {
     height: 400px;
     min-width: 350px;
-    width: 40%;
+    width: 50%;
     font-family: "Montserrat", sans-serif;
     background-color: #1f1919;
     .name {
@@ -85,13 +87,47 @@ main {
         color: #e0e0e7;
         background-color: #232629;
     }
-    .about_text {
+    .about_description {
         padding: 20px;
         height: 290px;
         font-family: "Montserrat", sans-serif;
         color: white;
         font-size: 23px;
     }
+}
+
+.about_town {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.Yougorsk_photo {
+    background-image: url(../images/gazprom.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 500px;
+    width: 100%;
+}
+
+.Yougorsk_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 40px;
+}
+
+.text_about_town {
+    width: 100%;
+    height: 500px;
 }
 
 @media(max-width:570px) {
@@ -114,7 +150,7 @@ main {
 }
 
 @media(max-width: 700px) {
-    .info_container {
+    .introduction {
         height: auto;
         flex-direction: column;
         .about_me {
