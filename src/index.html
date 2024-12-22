@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="./styles/index.css">
     <title>Laxerem</title>
 </head>
 <body>
     <header>
         <div class="initials_container">
             <div id="logo"></div>
-            <h2>Laxerem</h2>
+            <a href="/src/index.html">Laxerem</a>
         </div>
         <div class="my_catalog">
-            <a id="hobbies">Hobbies</a>
-            <a id="achievements">Achievements</a>
-            <a id="links">Links</a>
+            <a id="hobbies" href="/src/pages/hobbies.html">Hobbies</a>
+            <a id="achievements" href="">Achievements</a>
+            <a id="links" href="./pages/links.html">Links</a>
         </div>
     </header>
     <script type="module" src="./scripts/text_typing.js"></script>
@@ -36,15 +36,34 @@
             <div class="about_town">
                 <div class="Yougorsk_photo">
                     <div class="Yougorsk_text">
-                        <h1>Yougorsk</h1>
+                        <h1>Yugorsk</h1>
                     </div>
                 </div>
-                <div class="text_about_town">
+                <div class="text town">
                     <div>
-                        <p>I was born in a small town that appeared relatively recently (1962), but I think this city is one of the best small towns in Russia.<br>
-                            The town is developing faster and faster: New roads, parks, and playgrounds are being built.<br><br>
-                            There are many interesting people in this city who are ready to change the world around them and make the city a better place.<br><br>
-                            Also, this city is quite safe, and is perfect for families and their children.
+                        <p>I was born in a small town that appeared relatively recently (1962), but I think this town is one of the best small towns in Russia.
+                            The town is developing faster and faster: New roads, parks, and playgrounds are being built.
+                        </p>
+                        <div class="Yougorsk_photo_2"></div>
+                        <p>
+                            There are many interesting people in this city who are ready to change the world around them and make the town a better place.<br><br>
+                            Also, this town is quite safe, and is perfect for families and their children.
+                        </p>
+                        <p class="love">I <span class="warning">LOVE</span> YUGORSK.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about_my_room">
+                <div class="room_photo">
+                    <div class="shadow_text">
+                        <h1>My room</h1>
+                    </div>
+                </div>
+                <div class="text room">
+                    <div>
+                        <p>In my room, there is my main treasure - a computer. 
+                            I wouldn't say that I use it mainly for work: I often play on it, and after buying a laptop, I stopped working altogether, 
+                            except for editing videos and making music.
                         </p>
                     </div>
                 </div>
@@ -54,8 +73,15 @@
     <footer>
         <div class="footer_container">
             <h3>All <span class="yellow">rights</span> reserved by <u>Grigory Vorobyev</u> <span class="warning">PERSONALLY</span></h3>
-            <h3>Наверх к Григорию</h3>
+            <a class="scrol_start" style="cursor: pointer;">Move to top</a>
         </div>
     </footer>
+    <script>
+        const el = document.querySelector('.scrol_start')
+        const header = document.querySelector('header')
+        el.addEventListener('click', () => {
+            header.scrollIntoView({behavior: "smooth"});
+        })
+    </script>
 </body>
 </html>

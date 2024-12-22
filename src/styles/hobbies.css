@@ -1,0 +1,208 @@
+body {
+    background-color: #0d1117;
+}
+
+.hobbie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+}
+
+.image {
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+
+.shadow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.programmer {
+    background-image: url(../images/programming-2.gif);
+    height: 400px;
+    width: 100%;
+    .shadow {
+        background-color: rgba(0, 0, 0, 0.5); 
+        color: rgba(255, 255, 0, 0.823);
+        font-size: 35px;
+    }
+    -webkit-box-shadow: 0px 48px 85px -5px rgba(41, 202, 33, 0.19);
+    -moz-box-shadow: 0px 48px 85px -5px rgba(41, 202, 33, 0.19);
+    box-shadow: 0px 48px 85px -5px rgba(41, 202, 33, 0.19);
+}
+
+.musican_photo {
+    background-image: url(../images/musicant.jpg);
+    background-size: auto;
+    height: 400px;
+    width: 100%;
+    .shadow {
+        font-size: 35px;
+        background-color: rgba(0, 0, 0, 0.8);
+        h1 {
+            background-image: linear-gradient(to right, #ff00e1 0%, #ff00ae 46%, #7300ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+
+.video_edit {
+    background-image: url(../images/montage.gif);
+    height: 400px;
+    width: 100%;
+    .shadow {
+        font-size: 35px;
+        background-color: rgba(0, 0, 0, 0.6);
+        h1 {
+            background-image: linear-gradient(to right, #ff0000 0%, #59ff00 46%, #d400ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    font-size: 22px;
+    color: #fdfdfdd8;
+    p {
+        padding: 15px;
+        font-family: "Parkinsans", serif;
+    }
+    transition: 0.5s;
+}
+
+.mar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.mus {
+    margin-top: 20px;
+}
+
+.Fl_studio {
+    h2 {
+        font-size: 40px;
+        margin-top: 20px;
+        text-align: center;
+        background-image: linear-gradient(to right, #0040ffb6 0%, #ffbb00 46%, #ffffff80 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-bottom: 2px;
+    }
+    h3 {
+        font-family: "JetBrains Mono";
+        color: rgba(255, 255, 255, 0.629);
+    }
+    .fl {
+        border-bottom: 2px solid white;
+    }
+}
+
+.audio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+    -webkit-box-shadow: 21px 31px 100px 16px rgba(90, 255, 0, 0.29);
+    -moz-box-shadow: 21px 31px 100px 16px rgba(90, 255, 0, 0.29);
+    box-shadow: 21px 31px 100px 16px rgba(90, 255, 0, 0.29);
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.Atmosphere {
+    background-image: url(../images/Atmosphere.png);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+    width: 100%;
+    .shadow {
+        background-color: rgba(0, 0, 0, 0.6);
+        font-size: 30px;
+    }
+}
+
+audio {
+    background-color: #0d1117;
+}
+
+@media(max-width: 700px) {
+    .programmer {
+        .shadow {
+            font-size: 33px;
+        }
+    }
+    .musican_photo {
+        .shadow {
+            font-size: 33px;
+        }
+    }
+    .Atmosphere {
+        .shadow {
+            font-size: 27px;
+        }
+    }
+    .description {
+        width: 90%;
+    }
+}
+
+@media(max-width:570px) {
+    .programmer {
+        .shadow {
+            font-size: 27px;
+        }
+    }
+    .musican_photo {
+        .shadow {
+            font-size: 27px;
+        }
+    }
+    .Atmosphere {
+        .shadow {
+            font-size: 24px;
+        }
+    }
+    .description {
+        width: 100%;
+    }
+}
+
+@media(max-width:380px) {
+    .programmer {
+        .shadow {
+            font-size: 22px;
+        }
+    }
+    .musican_photo {
+        .shadow {
+            font-size: 22px;
+        }
+    }
+    .Atmosphere {
+        .shadow {
+            font-size: 20px;
+        }
+    }
+}

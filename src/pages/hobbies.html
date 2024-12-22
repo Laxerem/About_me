@@ -1,0 +1,137 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/hobbies.css">
+    <title>Hobbies</title>
+</head>
+<body>
+    <header>
+        <div class="initials_container">
+            <div id="logo"></div>
+            <a href="/src/index.html">Laxerem</a>
+        </div>
+        <div class="my_catalog">
+            <a id="hobbies" href="/src/pages/hobbies.html">Hobbies</a>
+            <a id="achievements" href="">Achievements</a>
+            <a id="links" href="./links.html">Links</a>
+        </div>
+    </header>
+    <main>
+        <div class="my_hobbies">
+            <div class="hobbie programming">
+                <div class="image programmer">
+                    <div class="shadow">
+                        <h1>Programming</h1>
+                    </div>
+                </div>
+                <div class="description mar">
+                    <p>I don't consider myself a real programmer, but I 
+                        have some experience.
+                    </p>
+                    <p>
+                        I discovered programming at 
+                        the age of 13, the decision to become a programmer 
+                        came to me suddenly, and I still can't explain 
+                        exactly what made me do it, maybe I wanted to 
+                        become like my brother.
+                    </p>
+                    <p>
+                        So that you can understand how strange it is, at 
+                        that time, I was studying at a music school, and 
+                        everyone thought I was going to become a musician.
+                    </p>
+                    <p>
+                        I like it when I see the result of my work, and 
+                        even though I often feel like I'm learning very 
+                        slowly, I realize that I'm getting better.
+                    </p>
+                </div>
+            </div>
+            <div class="hobbie musician">
+                <div class="image musican_photo">
+                    <div class="shadow">
+                        <h1>Music</h1>
+                    </div>
+                </div>
+                <div class="description mus">
+                    <p>
+                        I've been listening to music since I was a 
+                        kid, and if I like music, I can imagine it 
+                        in a variety of situations, which is why 
+                        music sounds in almost all my videos: 
+                        I adjust the video to it.
+                    </p>
+                    <p>
+                        If there were no music, 
+                        I wouldn't be interested in making videos.
+                    </p>
+                    <p>
+                        I started learning to play a musical instrument 
+                        at the age of 11, the first year I went to a 
+                        small amateur music group, later, my mother 
+                        enrolled me in a music school, where I studied 
+                        for 4 years.
+                    </p>
+                    <p>
+                        Unfortunately, I couldn't finish my studies 
+                        at a music school - I went to college, but to 
+                        this day I'm learning new compositions, developing my 
+                        skills.
+                    </p>
+                </div>
+                <div class="description FL_studio">
+                    <h2 class="fl">FL studio</h2>
+                    <p>
+                        Sometimes, I create music. I absolutely do not know how to use the program, 
+                        despite the fact that the melody is usually in my head. 
+                    </p>
+                    <p>
+                        I also noticed that it's difficult for me to create 
+                        complete music - I "feel" too much, and feelings don't last forever, so as a rule, 
+                        if I'm not done with music in one day, I'm unlikely to finish it.
+                    </p>
+                    <p>However, there is one finished track, made in 30 minutes, without effects, 
+                        just a melody, if you want, you can listen to it 
+                    </p>
+                    <div class="audio">
+                        <div class="image Atmosphere">
+                            <div class="shadow">
+                                <h2>Atmosphere</h2>
+                                <h3>Laxerem</h3>
+                            </div>
+                        </div>
+                        <audio id="atmosphere"controls> <source src="../audio/Atmosphere.mp3">
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function() {
+                                const audio = document.getElementById('atmosphere');
+                                audio.volume = 0.5;
+                              });
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="hobbie video_making">
+                <div class="image video_edit">
+                    <div class="shadow">
+                        <h1>Video editing</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer_container">
+            <h3>All <span class="yellow">rights</span> reserved by <u>Grigory Vorobyev</u> <span class="warning">PERSONALLY</span></h3>
+            <a class="scrol_start" style="cursor: pointer;">Move to top</a>
+        </div>
+    </footer>
+    <script>
+        const el = document.querySelector('.scrol_start')
+        const header = document.querySelector('header')
+        el.addEventListener('click', () => {
+            header.scrollIntoView({behavior: "smooth"});
+        })
+    </script>
+</body>

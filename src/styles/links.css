@@ -1,0 +1,98 @@
+body {
+    background-color: #0d1117;
+}
+
+main {
+    height: auto;
+}
+
+.image {
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid gray;
+    transition: 0.5s;
+}
+
+.links_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 35px;
+    gap:20px;
+}
+
+.shadow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 25px;
+}
+
+.github {
+    background-image: url(../images/github.png);
+    height: 400px;
+    width: 250px;
+    .shadow {
+        h1 {
+            color: rgb(65, 239, 30);
+        }
+    }
+}
+
+.github:hover {
+    border: 2px solid red;
+    -webkit-box-shadow: 0px 0px 34px 24px rgba(255, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 34px 24px rgba(255, 0, 0, 0.2);
+    box-shadow: 0px 0px 34px 24px rgba(255, 0, 0, 0.2);
+}
+
+.steam {
+    background-image: url(../images/steam_logo.jpg);
+    height: 400px;
+    width: 250px;
+    .shadow {
+        h1 {
+            color: rgb(255, 255, 255);
+        }
+    }
+}
+
+.steam:hover {
+    border: 2px solid blue;
+    -webkit-box-shadow: 0px 0px 34px 24px rgba(0, 51, 255, 0.2);
+    -moz-box-shadow: 0px 0px 34px 24px rgba(0, 51, 255, 0.2);
+    box-shadow: 0px 0px 34px 24px rgba(0, 51, 255, 0.2);
+}
+
+.music {
+    background-image: url(../images/ya_music_logo.png);
+    height: 400px;
+    width: 250px;
+    .shadow {
+        background-color: rgba(0, 0, 0, 0.8);
+        h1 {
+            color: rgb(229, 31, 31);
+        }
+    }
+}
+
+.music:hover {
+    border: 2px solid rgb(170, 0, 255);
+    -webkit-box-shadow: 0px 0px 34px 24px rgba(218, 0, 255, 0.2);
+    -moz-box-shadow: 0px 0px 34px 24px rgba(218, 0, 255, 0.2);
+    box-shadow: 0px 0px 34px 24px rgba(218, 0, 255, 0.2);
+}
+
+.github_logo {
+    background-image: url(../images/github_logo.png);
+    height: 100px;
+    width: 100px;
+}
