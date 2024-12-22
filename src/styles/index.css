@@ -45,11 +45,15 @@ header {
     align-items: center;
     font-size: 30px;
     font-weight: 500;
-    transition: 0.5s;
+    transition: 1s;
     a {
         font-family: "JetBrains Mono", serif;
         color: white;
         text-decoration: none;
+    }
+
+    a:hover {
+        color: rgba(255, 255, 0, 0.934);
     }
 
     #logo {
