@@ -24,7 +24,6 @@ class Typing {
     stop() {
         clearInterval(this.stream)
         this.is_work = false
-        console.log("DONE")
     }
 }
 class ElementTyping extends Typing {
@@ -40,10 +39,8 @@ class ElementTyping extends Typing {
             const text = text_array[i]
             if (i < text_array.length) {
                 this.element.innerHTML = ''
-                console.log("START")
                 this.typing(text)
                 .then(res => {
-                    console.log(`WAIT ${change_delay / 1000}s`)
                     setTimeout(func, change_delay)
                 })
                 i++
@@ -71,6 +68,7 @@ const text_array = [
     "I don't care about strangers. I'm not proud of it, in fact, it seems to me that we all lack a little empathy.", 
     "I'm thinking slowly. Many people say that this has its advantages, but it's not, I'm just slow.",
     "Wow, thanks for reading this far.",
+    "'Nobody cares' is a word I love and hate. It's so simple, but it's so offensive. It's just that sometimes it's said too often, and not to the people who deserve it.  We're all human beings, and we want attention, you just feel good about him.",
     "It may seem to you that I am an optimist, but often, when I come home after class, I want to fall into the abyss. Sometimes I don't understand people..."
 ]
 

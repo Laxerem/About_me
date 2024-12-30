@@ -52,13 +52,16 @@ body {
     width: 100%;
     .shadow {
         font-size: 35px;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(0, 0, 0, 0.7);
         h1 {
             background-image: linear-gradient(to right, #ff00e1 0%, #ff00ae 46%, #7300ff 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
     }
+    -webkit-box-shadow: 0px 12px 30px 0px rgba(241, 0, 255, 0.34);
+-moz-box-shadow: 0px 12px 30px 0px rgba(241, 0, 255, 0.34);
+box-shadow: 0px 12px 30px 0px rgba(241, 0, 255, 0.34);
 }
 
 .video_edit {
@@ -67,9 +70,9 @@ body {
     background-image: url(../images/montage.gif);
     .shadow {
         font-size: 35px;
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: rgba(0, 0, 0, 0.7);
         h1 {
-            background-image: linear-gradient(to right, #ff0000 0%, #59ff00 46%, #d400ff 100%);
+            background-image: linear-gradient(to right, #ff0000 0%, #ffffffcd 46%, #c300ff 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -124,18 +127,18 @@ body {
     align-items: center;
     flex-direction: column;
     gap:20px;
-    -webkit-box-shadow: 21px 31px 100px 16px rgba(90, 255, 0, 0.29);
-    -moz-box-shadow: 21px 31px 100px 16px rgba(90, 255, 0, 0.29);
-    box-shadow: 21px 31px 100px 16px rgba(90, 255, 0, 0.29);
     margin-bottom: 20px;
     padding-bottom: 20px;
+    -webkit-box-shadow: 0px 0px 35px 0px rgba(0, 28, 255, 0.34);
+    -moz-box-shadow: 0px 0px 35px 0px rgba(0, 28, 255, 0.34);
+    box-shadow: 0px 0px 35px 0px rgba(0, 28, 255, 0.34);
 }
 
 .Atmosphere {
     background-image: url(../images/Atmosphere.png);
     background-size: cover;
     background-attachment: fixed;
-    height: 300px;
+    height: 350px;
     width: 100%;
     .shadow {
         background-color: rgba(0, 0, 0, 0.6);
